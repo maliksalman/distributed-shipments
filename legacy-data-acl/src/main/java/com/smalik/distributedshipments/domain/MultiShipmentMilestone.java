@@ -4,13 +4,15 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Value;
 
+import java.time.Instant;
+
 @Value
 @Getter
 @Builder
-public class ShipmentNotice {
+public class MultiShipmentMilestone {
 
-    String serialNumber;
     String shipmentId;
-    String pickupLocation;
-    String dropOffLocation;
+    Instant time;
+    String type; // DROPOFF, PICKUP, PASSTHRU
+    String passThruLocation;
 }
