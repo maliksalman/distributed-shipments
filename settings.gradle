@@ -1,4 +1,4 @@
 rootProject.name = 'distributed-shipments'
 
-include 'legacy-plans-acl'
+include 'legacy-data-acl'
 
