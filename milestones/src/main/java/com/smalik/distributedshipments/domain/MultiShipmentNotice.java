@@ -1,15 +1,13 @@
 package com.smalik.distributedshipments.domain;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Value;
+import lombok.*;
 
 import java.util.List;
 
 @Value
-@Getter
 @Builder
-public class MiltiShipmentNotice {
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+public class MultiShipmentNotice {
 
     String shipmentId;
     List<String> serialNumbers;

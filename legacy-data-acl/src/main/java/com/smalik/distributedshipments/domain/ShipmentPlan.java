@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Value;
 
 import java.time.Instant;
+import java.util.List;
 import java.util.SortedSet;
 
 @Value
@@ -12,9 +13,9 @@ import java.util.SortedSet;
 @Builder
 public class ShipmentPlan {
 
+    int planVersion;
     String serialNumber;
     Instant issueTime;
 
-    SortedSet<ShipmentPlanSegment> segments;
-
+    List<ShipmentPlanSegment> segments;
 }
